@@ -1,5 +1,5 @@
 const addroute = {
-    addroute: 'a[href="/proposerTrajet"]',
+    addroute: '.nav-link',
     depart: 'input[placeholder="Saisir la ville ou adresse"]',
     submitaddress1:'.pac-item',
     arrive: 'input[placeholder="Saisir la ville ou adresse"]',

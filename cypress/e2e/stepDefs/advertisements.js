@@ -16,7 +16,7 @@ Given(`I am on the dashboard`, () => {
 });
 
 When(`I click on the advertisements button`, () => {
-    cy.get(advertisements.advertisementsbutton).click()
+    cy.get(advertisements.advertisementsbutton).eq(0).click()
     
     cy.wait('@trajets').then((interception) => {
     

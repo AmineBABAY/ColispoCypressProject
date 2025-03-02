@@ -1,5 +1,5 @@
 const Packageelmets = {
-    navpackage: 'a[href="/ajouterColis"]',
+    navpackage: '.nav-link',
     box: '.ajouter-colis_FromBox__MTfnE',
     qte: 'input[name="qte"]',
     name: 'input[name="title"]',
@@ -16,7 +16,7 @@ const Packageelmets = {
     departdate: 'input[type="date"]',
     arrivedate: 'input[type="date"]',
     submit2: 'button[type="submit"]',
-    value: 'input[type="number"]',
+    value: '.form-control',
     submit3: 'button[type="submit"]',
     Alertsuccess: '.alert-success',
 };

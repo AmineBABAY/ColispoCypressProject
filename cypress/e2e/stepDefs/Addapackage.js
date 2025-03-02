@@ -9,7 +9,7 @@ Given('I am on the dashboard', () => {
 });
 
 When(`I click on the add package button`, () => {
-    cy.get(Packageelmets.navpackage).click()
+    cy.get(Packageelmets.navpackage).eq(1).click()
     cy.wait(2000)
     cy.get(Packageelmets.box).should('be.visible')
 });
@@ -34,13 +34,13 @@ When(`I enter the package details`, () => {
     cy.wait(1000); 
     cy.get(Packageelmets.clickarrive).first().click();
     
-    cy.get(Packageelmets.departdate).eq(0).type('2025-01-28') 
-    cy.get(Packageelmets.arrivedate).eq(1).type('2025-01-29')
+    cy.get(Packageelmets.departdate).eq(0).type('2025-03-28') 
+    cy.get(Packageelmets.arrivedate).eq(1).type('2025-03-29')
     
    
     cy.get(Packageelmets.submit2).click()
     cy.wait(1000)
-    cy.get(Packageelmets.value).eq(4).type('150')
+    cy.get(Packageelmets.value).eq(12).type('150')
     cy.get(Packageelmets.submit3).click()
     // [When] Describes the action or event that triggers the scenario.
 });
