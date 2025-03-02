@@ -31,8 +31,9 @@ module.exports = defineConfig({
 
     setupNodeEvents(on, config) {
 
+      require('cypress-mochawesome-reporter/plugin')(on)
       return on('file:preprocessor', cucumber())
-
+      
     },
 
     specPattern: 'cypress/e2e/**/*.feature',
